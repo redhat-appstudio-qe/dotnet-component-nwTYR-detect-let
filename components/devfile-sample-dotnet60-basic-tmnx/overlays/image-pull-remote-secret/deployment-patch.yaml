@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-dotnet60-basic-tmnx
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: var_name
+          value: test
+        image: quay.io/rsoaresd_org/spi-demos-uqum-tenant/dotnet-component/devfile-sample-dotnet60-basic-tmnx@sha256:4522475a7e817e7cae6d42fa7945f049aa64053854d2aabd5c3ae94adb8ba700
+        name: main
+        resources: {}
+status: {}
